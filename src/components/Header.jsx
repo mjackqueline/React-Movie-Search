@@ -10,7 +10,7 @@ const Header = () => {
         <Wave1 style={{ transform: 'rotate(180deg)' }} className="border-top" />
         <img className="logo" src={MovieLogo} width={200} height={200} alt="movie search logo" />
         <ul className="nav__links">
-          <li><Link to="/" className="nav__link">Home</Link></li> {/* Links to home */}
+          <li><Link to="/" className="nav__link">Home</Link></li>
           <li><Link to="/" className="nav__link no-cursor">Contact</Link></li>
           <li><Link to="/" className="nav__link no-cursor">Movies</Link></li>
         </ul>
