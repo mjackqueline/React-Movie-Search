@@ -14,6 +14,12 @@ const Home = () => {
     }
   };
 
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter') {
+        handleSearch();
+    }
+  };
+
   return (
     <>
      <Header />
@@ -24,6 +30,7 @@ const Home = () => {
           placeholder="Search for a movie..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
+          onKeyDown={handleKeyDown}
         />
         <button className="btn" onClick={handleSearch}>Search</button>
         <figure className="main__img--wrapper">

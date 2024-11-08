@@ -227,6 +227,9 @@ body {
 }
 
 .sort-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   margin-bottom: 12px;
 }
 
@@ -424,7 +427,9 @@ body {
   }
 
   .sort-container {
-    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
   }
 
   .back-btn {

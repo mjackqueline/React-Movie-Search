@@ -13,7 +13,6 @@ function App() {
       <Route path="/search/:query" element={<Movies />}></Route>
       <Route path="/movie/:imdbID" element={<MovieDetails />} />
       </Routes>
-      <Home />
     </div>
     </Router>
   );
