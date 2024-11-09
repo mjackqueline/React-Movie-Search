@@ -254,6 +254,10 @@ body {
   opacity: .8;
 }
 
+.back-link {
+  text-align: center;
+}
+
 /* SPINNER */
 
 .loading-spinner {

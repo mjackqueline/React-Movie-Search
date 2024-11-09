@@ -37,7 +37,6 @@ const Movies = () => {
     setSortOption(option);
   };
 
-  // Apply sorting directly in render
   const sortedMovies = [...movies].sort((a, b) => {
     if (sortOption === "year-desc") {
       return parseInt(b.Year) - parseInt(a.Year);
@@ -48,7 +47,7 @@ const Movies = () => {
     } else if (sortOption === "title-desc") {
       return b.Title.localeCompare(a.Title);
     }
-    return 0; // no sorting if no option selected
+    return 0; 
   });
 
   return (
