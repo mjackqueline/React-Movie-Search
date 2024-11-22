@@ -6,7 +6,7 @@ import placeholderImage from "../assets/placeholder.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 
-const API_URL = 'http://www.omdbapi.com?apikey=c1f9c978';
+const API_URL = 'https://www.omdbapi.com?apikey=c1f9c978';
 
 const MovieDetails = () => {
   const { imdbID } = useParams();
