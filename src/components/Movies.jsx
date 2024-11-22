@@ -5,7 +5,7 @@ import Footer from "./Footer";
 import placeholderImage from "../assets/placeholder.png";
 import Sorter from "./Sorter";
 
-const API_URL = "http://www.omdbapi.com?apikey=c1f9c978";
+const API_URL = "https://www.omdbapi.com?apikey=c1f9c978";
 
 const Movies = () => {
   const { query } = useParams();

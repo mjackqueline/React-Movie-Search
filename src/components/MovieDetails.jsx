@@ -3,6 +3,8 @@ import { Link, useParams } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
 import placeholderImage from "../assets/placeholder.png"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 
 const API_URL = 'http://www.omdbapi.com?apikey=c1f9c978';
 
@@ -21,7 +23,11 @@ const MovieDetails = () => {
   }, [imdbID]);
 
   if (!movie) {
-    return <p>Loading...</p>;
+    return <div className="spinner-container-movie-details">
+    <FontAwesomeIcon
+      icon={faSpinner}
+      className="loading-spinner"
+    /></div>;
   }
 
   return (
